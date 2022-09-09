@@ -1,0 +1,95 @@
+body {
+	background-color: black;
+}
+h1 {
+	color:dimgrey;
+	font-size: 60px;
+	margin: 60px;
+	background-color: blue
+	text-align; 
+  
+  } 
+  p {
+	color: #999999;
+	background-color:  rgb(255, 0, 0);
+  }
+  
+  .continer{
+	width: 300px;
+	height: 300px;
+	border: 5px solid red;
+	display: grid;
+  }
+  button {
+	background-color: coral;
+	color: black;
+	font-size: 25px;
+	margin: auto;
+  }
+
+	.heroes {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-end;
+		justify-content:  space-between;
+	}
+
+	#Naomi {
+		color: pink;
+	}
+
+	#Byron {
+		color: green;
+		/* font-size: 50px; */
+	}
+	
+	#Brian {
+		color:darkorange;
+	}
+	
+	#Cory {
+		color:firebrick;
+	}
+
+	#PAGECREATORS {
+		color: gold;
+	}
+	
+	#Home {
+		color: coral;
+	}
+
+	.list {
+		font-size: 25px;
+	}
+
+	#jokes {
+		color: coral;
+	}
+
+	#Characters {
+		color: coral;
+	}
+
+	#spiderManImage {
+		width: 100vw;
+		height: 100vh;
+	}
+
+	#visioncharacter {
+		width: 100vw;
+		height: 100vh;
+	}
+
+
+	@media screen and (max-width: 992px) {
+		body {
+		}
+	}
+
+	@media screen and (max-width: 600px) {
+		body {
+			background-color: olive;
+			color: white;
+		}
+	}
