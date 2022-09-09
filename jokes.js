@@ -1,3 +1,4 @@
-function "get joke"(){
-    console.log("button is working");
-}
+function getJokes(){fetch
+    'https://api.jokes.one/jod'
+   
+    }
