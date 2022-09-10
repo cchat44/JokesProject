@@ -1,3 +1,4 @@
+
 function charJokes(){fetch( 'https://api.jokes.one/jod'
 
 )
@@ -18,4 +19,3 @@ function charJokes(){fetch( 'https://api.jokes.one/jod'
       console.log(item);
       jokesList.innerHTML = `<p>Character:${item.name}</p> <img src=""/>` 
     });}
-
