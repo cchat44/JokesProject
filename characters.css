@@ -10,6 +10,7 @@ button {
     background-color: white;
     ;
  }
- /* #char-list {
+ char-list {
     width: 500px;
- } */
+    height: 500px;
+ }
