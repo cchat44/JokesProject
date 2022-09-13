@@ -1,21 +1,19 @@
+const button = document.querySelector(".container button");
+const jokeDiv = document.querySelector(".container .joke p");
 
-function charJokes(){fetch( 'https://api.jokes.one/jod'
+document.addEventListener("DOMContentLoaded", getJock);
 
-)
-    .then((response) => response.json())
-    .then((data) => {
-    
-      let item = data.data.results[Math.floor(Math.random()*data.data.results.length)];
-      let jokesList = document.getElementById("char-list");
-      data.data.results.forEach(element => {
-        // console.log("object");
-        jokesList.innerHTML += `
-        <li>
-        ${element.name}
-        </li>
+button.addEventListener("click",getJock);
+  async function getJock() {
+    const jokeData = await fetch("https://icanhazdadjoke.com/", {
+      headers: {
+        Accept: "application/json"
+        
+      }
+      
+    });
+    const jokeObj = await jokeData.json();
+    jokeDiv.innerHTML = jokeObj.joke;
+    console.log(jokeData);
 
-        `
-      });
-      console.log(item);
-      jokesList.innerHTML = `<p>Character:${item.name}</p> <img src=""/>` 
-    });}
+  }

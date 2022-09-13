@@ -25,5 +25,5 @@ function myName(){fetch(
       // });
       console.log(item);
       // charList.style.width="100px"
-      charList.innerHTML = `<p>Hero:${item.name}</p> <img src="${item.thumbnail.path}.jpg" style="width: 400px"/>` 
+      charList.innerHTML = `<p>Character:${item.name}</p> <img src="${item.thumbnail.path}.jpg" style="width: 400px"/>` 
     });}
