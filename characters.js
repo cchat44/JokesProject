@@ -1,4 +1,3 @@
-console.log("Hello from our JS")
 function myName(){fetch(
     "http://gateway.marvel.com/v1/public/characters?apikey=6f9c39bd72b08fe9283960cafb8b4b0f"
   )
@@ -25,5 +24,5 @@ function myName(){fetch(
       // });
       console.log(item);
       // charList.style.width="100px"
-      charList.innerHTML = `<p>Character Name: ${item.name}</p> <img src="${item.thumbnail.path}.jpg" style="width: 400px"/>` 
+      charList.innerHTML = `<p>Character:${item.name}</p> <img src="${item.thumbnail.path}.jpg" style="width: 400px"/
     });}
