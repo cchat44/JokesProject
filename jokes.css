@@ -2,9 +2,15 @@ body {
 	background-color:palegreen;
     
 }
+
 button {
     width: 100px;
     height: 100px;
     border-radius: 50%;
     background-color: white;
+ }
+
+ :root {
+    --bs-body-bg: red;
+    
  }
